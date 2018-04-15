@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iryaz.mentaltimer.WidgetActivity">
+
+    <SeekBar
+        android:id="@+id/timeSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/mentalTimerMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="120sp"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/timeSetting"
+        android:layout_toLeftOf="@+id/splitTextView"
+        android:layout_toStartOf="@+id/splitTextView" />
+
+    <TextView
+        android:id="@+id/mentalTimerSecondes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="120sp"
+        android:layout_alignBaseline="@+id/splitTextView"
+        android:layout_alignBottom="@+id/splitTextView"
+        android:layout_toRightOf="@+id/splitTextView"
+        android:layout_toEndOf="@+id/splitTextView" />
+
+    <TextView
+        android:id="@+id/splitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="120sp"
+        android:layout_alignBaseline="@+id/mentalTimerMinutes"
+        android:layout_alignBottom="@+id/mentalTimerMinutes"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
